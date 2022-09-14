@@ -2,15 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" container="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" container="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Simple form</title>
+  </head>
 <style>
-  *{margin: 0;padding: 0;box-sizing: border-box;font-family: 'Monsetrat', sans-serif;}
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing:
+    border-box;
+    font-family: 'Monsetrat', sans-serif;}
 
+  @media only screen and (max-width: 310px) {
+    h1 {
+      background: lightblue;
+    }
+    div.content{width: 250px}
+  }
 body{
   background: #6a6767;
-  overflow: hidden;
+
 }
 
 center{
@@ -18,11 +30,7 @@ center{
 }
 
 .container{
-  margin: auto;
-  max-width: 770px;
-  background: rgb(85, 81, 81);
-  padding: 10px;
-  height: 1000px;
+
 }
 
 .content{
@@ -34,7 +42,7 @@ center{
   padding: 20px;
   border-radius: 20px;
   max-width: 750px;
-  width: 330px;
+  width: 360px;
   border: 2px solid rgb(157, 88, 235);
   box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.73);
 }
@@ -44,7 +52,7 @@ input[type=text], select{
   width: 100%;
   padding: 12px;
   margin: 9px 0px;
-  border:rgb(69, 67, 85)
+  border:rgb(69, 67, 85);
   border-radius: 1px solid black;
   display: inline-block;
   box-sizing: border-box;
@@ -63,11 +71,11 @@ input[type=submit]{
 }
 </style>
 
-</head>
+
 <body>
   <div class="container" id="container">
     <div class="content" id="content">
-      <form action="">
+      <form>
         <center>
         <h1>DAIJOBU_MLBB</h1>
         </center>
