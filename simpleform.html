@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" container="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" container="ie=edge">
+  <title>Simple form</title>
+<style>
+  *{margin: 0;padding: 0;box-sizing: border-box;font-family: 'Monsetrat', sans-serif;}
+
+body{
+  background: #6a6767;
+  overflow: hidden;
+}
+
+center{
+  margin: 20px 0px;
+}
+
+.container{
+  margin: auto;
+  max-width: 770px;
+  background: rgb(85, 81, 81);
+  padding: 10px;
+  height: 1000px;
+}
+
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 750px;
+  width: 330px;
+  border: 2px solid rgb(157, 88, 235);
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.73);
+}
+
+
+input[type=text], select{
+  width: 100%;
+  padding: 12px;
+  margin: 9px 0px;
+  border:rgb(69, 67, 85)
+  border-radius: 1px solid black;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+input[type=submit]{
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 9px 0px;
+  border: none;
+  background-color: #6847e9;
+  color: white;
+  font-size: ;
+  padding: 20px;
+}
+</style>
+
+</head>
+<body>
+  <div class="container" id="container">
+    <div class="content" id="content">
+      <form action="">
+        <center>
+        <h1>DAIJOBU_MLBB</h1>
+        </center>
+        <label for="Name">Name</label>
+        <input type="text" id="Name" name="Name" placeholder="Your Name">
+        <label for="Name">Last name</label>
+
+        <input type="text" id="Name" name="Name" placeholder="Last Name">
+        <label for="List">Tipe</label>
+
+        <select name="Order" id="Order">
+          <option value="Baju">Baju</option>
+          <option value="Celana">Celana</option>
+          <option value="Kaos">Kaos</option>
+        </select>
+        <label for="No Telp">Your Telp Number</label>
+        <input type="text" id="Telp" name="No Telp" placeholder="Your phone number">
+
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
